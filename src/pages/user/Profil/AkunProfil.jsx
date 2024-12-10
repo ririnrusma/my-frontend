@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./profile.css";
 
 const AkunProfil = () => {
@@ -7,21 +7,23 @@ const AkunProfil = () => {
 
   const closeModal = () => setModal(null);
 
+  const navigate = useNavigate();
+
+  const Logout = () => {
+    navigate("/beranda");
+  }
+
   return (
       <div className="prof-container" id="profil">
         <div className="profile-container">
           <div className="profile-photo-border">
-            <img
-              className="profile-photo"
-              src="profile-pic.jpg"
-              alt="Profile"
-            />
+            <img className="profile-photo" src="assets/img/bg front end.jpg" alt="Profile"/>
           </div>
           <div className="profile-name-section">
             <h1 className="profile-name">Key Alderen</h1>
             <p className="profile-subtitle">keyalderen</p>
           </div>
-          <Link to="/beranda" className="logout-button">Logout</Link>
+          <button onClick={Logout} className="logout-button">Logout</button>
         </div>
 
         <div className="options-container">
@@ -34,7 +36,7 @@ const AkunProfil = () => {
           <div className="option-item" onClick={() => setModal("changePassword")}>
             <span>Ubah Kata Sandi</span>
           </div>
-          <Link to="/transaksi" className="option-item">
+          <Link to="/transaksiuser" className="option-item">
             <span>Daftar Transaksi</span>
           </Link>
         </div>

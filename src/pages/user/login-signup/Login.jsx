@@ -6,13 +6,13 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import './style.css';
 
 const Login = ({ setIsLoggedIn }) => {
-    const [username, setUsername] = useState('');
+    const [email, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault(); 
-        console.log('Logging in with:', username, password);
+        console.log('Logging in with:', email, password);
         
         setIsLoggedIn(true);
         navigate('/beranda');
@@ -20,20 +20,19 @@ const Login = ({ setIsLoggedIn }) => {
 
     return (
         <div className="login" id="login">
-            <img className="logo-log" alt="" src="assets/img/bg front end.jpg" />
             <div className="parent-log">
                 <img className="child-log" alt="" src="assets/img/logsign.png" />
                 <form onSubmit={handleLogin}>
                     <div className="input-log">
                         <div className="uname-log">
-                            <FontAwesomeIcon icon={faUser } /> Nama pengguna atau email
+                            <FontAwesomeIcon icon={faUser } />Email
                         </div>
                         <div className="wrapper-log">
                             <input 
                                 type="text" 
-                                value={username} 
+                                value={email} 
                                 onChange={(e) => setUsername(e.target.value)} 
-                                placeholder="Masukkan nama pengguna atau email" 
+                                placeholder="Masukkan email" 
                                 className="input-field" 
                             />
                         </div>
