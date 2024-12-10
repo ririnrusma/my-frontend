@@ -8,7 +8,7 @@ import Sidebar from "./component/admin/Sidebar";
 import Dashboard from "./pages/admin/Dashboard";
 import JenisSepeda from "./pages/admin/JenisSepeda";
 import Transaksi from "./pages/admin/Transaksi";
-import Pengguna from "./pages/admin/pengguna";
+import Pengguna from "./pages/admin/Pengguna";
 import Loginadmin from "./pages/admin/Loginadmin";
 import TambahSepeda from "./pages/admin/TambahSepeda";
 import EditSepeda from "./pages/admin/EditSepeda";
