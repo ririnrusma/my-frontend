@@ -25,7 +25,7 @@ import Beranda from "./pages/user/Beranda/Beranda";
 import Kontak from "./pages/user/Kontak kami/Kontak";
 import TransaksiUser from "./pages/user/Rental/TransaksiUser";
 import Register from "./pages/user/login-signup/Register";
-import Konfirmasi from "./pages/user/Kontak kami/Konfirmasi";
+import Konfirmasi from "./pages/user/Kontak kami/konfirmasi";
 import Pembayaran from "./pages/user/Rental/pembayaran";
 import Navbar from "./component/user/navbar/Navbar";
 import Footer from "./component/user/footer/Footer";
