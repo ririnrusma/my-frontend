@@ -27,8 +27,8 @@ import TransaksiUser from "./pages/user/Rental/TransaksiUser";
 import Register from "./pages/user/login-signup/Register";
 import Konfirmasi from "./pages/user/Kontak kami/konfirmasi";
 import Pembayaran from "./pages/user/Rental/pembayaran";
-import Navbar from "./component/user/navbar/Navbar";
-import Footer from "./component/user/footer/Footer";
+import Navbar from "./component/user/navbar/navbar";
+import Footer from "./component/user/footer/footer";
 
 // PrivateRoute component
 const PrivateRoute = ({ children, isLoggedIn }) => {
